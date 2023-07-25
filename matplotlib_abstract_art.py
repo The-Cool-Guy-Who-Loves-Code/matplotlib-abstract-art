@@ -23,7 +23,7 @@ def graph(start=-50, end=50, clarity=2, height_added=0.0):
     return x, y
 
 
-for j in range(height_added):
+for j in range(waves):
     points = graph(height_added=j * height_added)
     plt.plot(points[0], points[1])
 plt.show()
